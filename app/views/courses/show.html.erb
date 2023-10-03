@@ -22,7 +22,7 @@
       Title
     </label>
 
-    <input type="text" id="title_box" name="query_title">
+    <input type="text" id="title_box" name="query_title" value = <%=@course.title%>>
   </div>
 
   <div>
@@ -34,11 +34,11 @@
   </div>
 
   <div>
-    <label for="the_course_id">
-      Term offered
+    <label for="the_course_id" value="<%= @course.id %>">
+      Course
     </label>
 
-    <input type="text" id="the_course_id" name="query_course_id" value="<%= @course.id %>">
+    <input type="text" id="the_course_id" name="query_course_id" >
   </div>
 
   <div>

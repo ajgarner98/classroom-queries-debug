@@ -8,7 +8,7 @@
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #  department_id :integer
-#
+#  
 class Course < ApplicationRecord
   has_many :enrollments, dependent: :destroy
 end
