@@ -1,6 +1,6 @@
 class EnrollmentsController < ApplicationController
   def create
-    @enrollment = Enrollment.new
+    @enrollment = Enrollment.all.order({ :created_at => :desc })
     @enrollment.course_id = params.fetch("query_course_id")
     @enrollment.student_id = params.fetch("query_student_id")
 
